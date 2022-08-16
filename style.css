@@ -32,7 +32,33 @@ body{
 /* End Header + Links */
 
 /* Begin Hero section */
-
+.herobox{
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 15%   ;
+    margin-top: 10em;
+}
+.hero{
+    font-size: 48px;
+    font-weight: 900;
+}
+.heocon{
+    filter:contrast(100%)
+}
+.herobox a{
+    color:whitesmoke;
+    background-color: #3882F6;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
 
 .footer{
     display: flex;
