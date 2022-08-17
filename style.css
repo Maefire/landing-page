@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     justify-content: space-between;
     margin: 0;
-    overflow: hidden;
+    overflow: auto; /*Leave as auto or scroll. Page breaks on hidden*/
 }
 
 /* Start Header + Links */
@@ -17,7 +17,7 @@ body{
     color: whitesmoke;    
     font-size: 24px;  
     align-items: center; 
-    margin: -4px 15% 8px;
+    margin: -4px 5% 8px 15%;
     font-weight: 700;
     /* border: 2px solid red; */
 }
@@ -32,21 +32,37 @@ body{
 /* End Header + Links */
 
 /* Begin Hero section */
+.containerhero{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 10em;
+    margin-left: 15%;
+    margin-right: 5%;
+    border: 2px solid green;
+    
+}
+
 .herobox{
     display: flex;
     color: whitesmoke;
-    justify-content: space-around;
+    justify-content: space-betee;
     flex-direction: column;
     width: 400px;
-    margin-left: 15%   ;
-    margin-top: 10em;
+    margin-left: 0;
+    margin-top: 0;
+    /* position:relative; */
+    border: 2px solid red;
 }
-.hero{
+.herotext{
     font-size: 48px;
     font-weight: 900;
+    padding-bottom: 10px;
 }
-.heocon{
-    filter:contrast(100%)
+.herocon{
+    filter:contrast(75%);
+    padding-bottom: 10px;
+    margin-bottom: 1em;
 }
 .herobox a{
     color:whitesmoke;
@@ -59,7 +75,26 @@ body{
     justify-content: center;
     width: max-content;
 }
+.image{
+    flex-shrink: 1;
+    max-height: 300px;
+    
+}
+/* End Hero Section */
 
+/*Begin Info Section*/
+.containerinfo{
+    background-color: whitesmoke;
+    display: flex;
+    border: 2px solid green;
+}
+/* End Info Section  EERGEROGERGMO EXTRA STUFF HERE. MAE, TRY TO GET WHITE BACKGROUND IN INFO CONTAINER SO YOU CAN SAVE SPACE. NOT A BIG DEAL. SAVE SPACE AFTER. WORRY ABOUT COMPLETING FIRST*/
+.containerquote{
+    background-color: #E5E7EB;
+}
+.containersign{
+    background-color: whitesmoke;
+}
 .footer{
     display: flex;
     justify-content: center;
