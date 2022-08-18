@@ -1,16 +1,20 @@
 body{ 
     display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #1F2937;
+   
     box-sizing: border-box;
     flex-flow: column;
     min-height: 100vh;
+    min-width: 100vh;
     justify-content: space-between;
     margin: 0;
     overflow: auto; /*Leave as auto or scroll. Page breaks on hidden*/
 }
 
 /* Start Header + Links */
+.headbg, .footbg{
+    background-color: #1F2937;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -40,7 +44,7 @@ body{
     margin-left: 15%;
     margin-right: 5%;
     border: 2px solid green;
-    
+    padding-bottom: 5em;
 }
 
 .herobox{
@@ -57,12 +61,13 @@ body{
 .herotext{
     font-size: 48px;
     font-weight: 900;
-    padding-bottom: 10px;
+    margin-top: inherit;
 }
 .herocon{
     filter:contrast(75%);
     padding-bottom: 10px;
     margin-bottom: 1em;
+    margin-top: inherit;
 }
 .herobox a{
     color:whitesmoke;
@@ -71,8 +76,6 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
     width: max-content;
 }
 .image{
@@ -83,10 +86,24 @@ body{
 /* End Hero Section */
 
 /*Begin Info Section*/
-.containerinfo{
+.infobg{
     background-color: whitesmoke;
+    /* border: 2px solid green; */
+}
+.infotext{
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin: 1em;
+}
+.infocontainer{
     display: flex;
-    border: 2px solid green;
+    justify-content: center;
+    gap: 80px;
+}
+.infopic{
+    max-width: 200px;
+    border: 2px solid red;
 }
 /* End Info Section  EERGEROGERGMO EXTRA STUFF HERE. MAE, TRY TO GET WHITE BACKGROUND IN INFO CONTAINER SO YOU CAN SAVE SPACE. NOT A BIG DEAL. SAVE SPACE AFTER. WORRY ABOUT COMPLETING FIRST*/
 .containerquote{
@@ -99,4 +116,5 @@ body{
     display: flex;
     justify-content: center;
     color: whitesmoke;    
+    padding: 2em;
 }
