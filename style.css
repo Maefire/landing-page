@@ -48,20 +48,20 @@ a, .hlink{
     margin-top: 10em;
     margin-left: 15%;
     margin-right: 5%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-bottom: 5em;
 }
 
 .herobox{
     display: flex;
-    color: whitesmoke;
+    color: #E5E7EB;
     justify-content: space-between;
     flex-direction: column;
     width: 400px;
     margin-left: 0;
     margin-top: 0;
-    /* position:relative; */
-    border: 2px solid red;
+    
+    /* border: 2px solid red; */
 }
 .herotext{
     font-size: 48px;
@@ -75,7 +75,7 @@ a, .hlink{
     margin-top: inherit;
 }
 .herobox a{
-    color:whitesmoke;
+    color:#E5E7EB;
     background-color: #3882F6;
     text-decoration: none;
     padding: 10px 40px;
@@ -91,12 +91,6 @@ a, .hlink{
 /* End Hero Section */
 
 /*Begin Info Section*/
-/* .infobg,
-.actionbg{
-    background-color: whitesmoke;
-    
-} */
-
 .infotext{
     font-size: 36px;
     font-weight: 900;
@@ -129,7 +123,7 @@ a, .hlink{
 .we{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     justify-content: center;  
 }
 .inquote{
@@ -137,7 +131,7 @@ a, .hlink{
     filter:contrast(75%);
     font-style: italic;
     color: #1F2937;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     max-width: 656px;
     padding:1em; 
     display:flex;
