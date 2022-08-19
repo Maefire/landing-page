@@ -1,18 +1,18 @@
 body{ 
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
     box-sizing: border-box;
     flex-flow: column;
     min-height: 100vh;
     min-width: 100vh;
     justify-content: space-between;
     margin: 0;
+    background-color: whitesmoke;
     overflow: auto; /*Leave as auto or scroll. Page breaks on hidden*/
 }
 
 /* Start Header + Links */
-.headbg, .footbg{
+.headbg, .footbg, .herobg{
     background-color: #1F2937;
 }
 .header{
@@ -23,19 +23,24 @@ body{
     align-items: center; 
     margin: -4px 5% 8px 15%;
     font-weight: 700;
-    /* border: 2px solid red; */
 }
-.header a{
+a, .hlink{
+    display: flex;
     list-style: none;
-    text-decoration: none;
-    color: whitesmoke;
+    gap: 8px;
     font-size: 18px;
-    font-weight: 100;
-    padding: 0 15px 0 0;
+    color:#E5E7EB;
+    text-decoration: none;
 }
-/* End Header + Links */
-
-/* Begin Hero section */
+    /* border: 2px solid red; */
+    /* End Header + Links */
+    
+    /* Begin Hero section */
+.upsignhero{
+    list-style: none;
+    font-weight: 100;
+    padding-bottom:15px;
+}
 .containerhero{
     display: flex;
     justify-content: space-between;
@@ -50,7 +55,7 @@ body{
 .herobox{
     display: flex;
     color: whitesmoke;
-    justify-content: space-betee;
+    justify-content: space-between;
     flex-direction: column;
     width: 400px;
     margin-left: 0;
@@ -86,32 +91,105 @@ body{
 /* End Hero Section */
 
 /*Begin Info Section*/
-.infobg{
+/* .infobg,
+.actionbg{
     background-color: whitesmoke;
-    /* border: 2px solid green; */
-}
+    
+} */
+
 .infotext{
     font-size: 36px;
     font-weight: 900;
     text-align: center;
     margin: 1em;
+    color:#1F2937;
 }
 .infocontainer{
     display: flex;
     justify-content: center;
     gap: 80px;
 }
+.infostyle{
+    border: 3px solid #3882F6; 
+    border-radius: 10px;
+}
 .infopic{
     max-width: 200px;
-    border: 2px solid red;
+    text-align: center;
+    /* border: 2px solid red; */
 }
-/* End Info Section  EERGEROGERGMO EXTRA STUFF HERE. MAE, TRY TO GET WHITE BACKGROUND IN INFO CONTAINER SO YOU CAN SAVE SPACE. NOT A BIG DEAL. SAVE SPACE AFTER. WORRY ABOUT COMPLETING FIRST*/
-.containerquote{
+/* End Info Section  */
+
+/* Begin Inspire Section */
+.inspirebg{
     background-color: #E5E7EB;
+
+    
 }
-.containersign{
-    background-color: whitesmoke;
+.we{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid green;
+    justify-content: center;  
 }
+.inquote{
+    font-size: 36px;
+    filter:contrast(75%);
+    font-style: italic;
+    color: #1F2937;
+    border: 2px solid red;
+    max-width: 656px;
+    padding:1em; 
+    display:flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+ }
+.thor{
+    position: absolute;
+    font-weight: 900;
+    font-size: 20px;
+}
+/* End Inspire Section */
+
+
+/* Begin Signup Section */
+.modalbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 10px;
+    width: 80%;
+    margin:3em;
+    padding: 3em 0;
+    justify-content: space-around;
+}
+.actionheader{
+    color: #E5E7EB;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 900;
+}
+.actiontext{
+    filter:contrast(75%);
+    font-weight: 300;    
+    font-size: 18px;
+}
+
+.upsign{
+    border-radius: 10px;
+    border: 2px solid #E5E7EB;
+    background-color: #3882F6;
+    color:#E5E7EB;
+    align-self: center;
+    padding: 4px 2em;
+}
+
 .footer{
     display: flex;
     justify-content: center;
